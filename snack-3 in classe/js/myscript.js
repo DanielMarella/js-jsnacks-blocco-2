@@ -26,10 +26,32 @@
 // ***************************************************
 // Alternative solution:
 
+// let sum = 0;
+
+// for (let index = 1; index < 11; index++){
+//     sum += index;
+// }
+
+// console.log(sum, sum / 10);
+
+// *****************************************
+
+// add input button 
+
+const inputElement = document.getElementById('user-number');
+const buttonElement = document.querySelector('button');
+
 let sum = 0;
 
-for (let index = 1; index < 11; index++){
-    sum += index;
-}
+buttonElement.addEventListener('click', function(){
+    sum = parseInt(inputElement.value);
+    console.log(sum);
 
-console.log(sum, sum / 10);
+    
+    for (let index = 1; index < 11; index++){
+        sum += index;
+    }
+    
+    console.log(sum, sum / 10);
+
+})
