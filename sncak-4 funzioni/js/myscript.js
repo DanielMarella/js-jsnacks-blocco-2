@@ -11,27 +11,27 @@ Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lun
 
 
 
-let word1 = prompt('inserisci una parola');
-let word2 = prompt('inserisci una parola');
+let parola1 = prompt('inserisci una parola');
+let parola2 = prompt('inserisci una parola');
 
 function Length(word1, word2){
-    if (word1.length === word2.length){
+    if (parola1.length === parola2.length){
         let isSameLength = word1 + word2;
         console.log(isSameLength);
         return true;
     }
-    else if (word1.length > word2.length){
-        let isSameLength = word1;
+    else if (parola1.length > parola2.length){
+        let isSameLength = parola1;
         console.log(isSameLength);
         return false; 
     }
     
-    else if (word1.length < word2.length){
-        let isSameLength = word2;
+    else if (parola1.length < parola2.length){
+        let isSameLength = parola2;
         console.log(isSameLength);
         return false;
     }
 }
 
-let isSameLength = Length(word1, word2);
+let isSameLength = Length(parola1, parola2);
 console.log(isSameLength);
