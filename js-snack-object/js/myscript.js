@@ -17,22 +17,24 @@
 //     i tiri sono un numero intero compreso tra 20 e 100 x 
 
 
-const basketballPlayer = [];
 
 // const daniel = {
-//     codiceGiocatore : 000000,
-//     nome : 'Daniel',
-//     cognome : 'Marella',
-//     età : 27,
-//     mediaPuntiPartita : 0,
-//     percentualeSuccesso : 0,
-//     stoppate: 20,
-//     tiri: 2
-// };
+    //     codiceGiocatore : 000000,
+    //     nome : 'Daniel',
+    //     cognome : 'Marella',
+    //     età : 27,
+    //     mediaPuntiPartita : 0,
+    //     percentualeSuccesso : 0,
+    //     stoppate: 20,
+    //     tiri: 2
+    // };
+    
+    // basketballPlayer.push(daniel);
+    // console.log(basketballPlayer);
 
-// basketballPlayer.push(daniel);
-// console.log(basketballPlayer);
 
+const basketballPlayer = [];
+    
 let randomMedia = randomPoint(0,50);
 
 let randomPercentual = randomPoint(0, 100);
@@ -59,7 +61,7 @@ console.log(basketballPlayer);
 
 function randomPoint(min, max){
 
-    let randomNumber = Math.floor((Math.random() * (max - min) + 1) + min));
+    let randomNumber = Math.floor((Math.random() * (max - min) + 1) + min);
 
     return randomNumber;
 }
