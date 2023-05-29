@@ -59,7 +59,7 @@ console.log(basketballPlayer);
 
 function randomPoint(min, max){
 
-    let randomNumber = Math.floor(Math.random() * (max - min) + min);
+    let randomNumber = Math.floor((Math.random() * (max - min) + 1) + min));
 
     return randomNumber;
 }
